@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How to Creating HTML Element</title>
+  </head>
+  <body>
+    <div style="background-color:#ffdd7c">
+      First HTML Text<br>
+      (Similar with "How to use Javascript Method append().html")
+      <br><br>
+
+      Using createElement(), innerText and append()
+
+    </div>
+
+    <div>
+      <br>
+      <p style="margin:0">
+        Reference : <a href="https://developer.mozilla.org/ko/docs/Web/API/ParentNode/append">ParnetNode.append() (Mozilla)</a>
+      </p>
+      <p style="margin:0">
+        Reference : <a href="https://www.w3schools.com/js/js_htmldom_nodes.asp">Creating New HTML Elements(Nodes) (W3school)</a>
+      </p>
+    </div>
+
+    <br>
+    <input type="button" name="" value="Click2 for append()" onclick="var para = document.createElement('p');
+                                                                      para.innerText='This is new (Add Tage as append)';
+                                                                      document.querySelector('body').append(para)">
+    <input type="button" name="" value="Click3 for append()" onclick="var para3 = document.createElement('p');
+                                                                      para3.innerText='This is new (Add HTML tag where I want)';
+                                                                      document.querySelector('body').children[0].append(para3)">
+  </body>
+</html>
